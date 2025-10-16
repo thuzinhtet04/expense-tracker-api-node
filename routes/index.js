@@ -13,6 +13,7 @@ const app = express();
 app.use(express.json());
 
 connectDB()
+
 app.get("/" , (req , res) => {
     res.json({message : "api is running..."})
 })
